@@ -1,0 +1,76 @@
+
+//   _____ _____ _____ _____ _____ _____ _____ _____ _____ 
+//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
+//  |   __|     |__   | | | |   __|   __| | | |   --|     |
+//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|
+//
+
+{
+    "logo": {
+        "source": "~/.config/fastfetch/ascii/pikachu.txt",
+        "type": "auto",
+        "height": 1,
+        "color": {
+            "1": "red"
+        },
+        "padding": {
+            "left": 2
+        }
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        "title",
+        "break",
+        {
+            "type": "os",
+            "key": "OS",
+            "keyColor": "red"
+        },
+        {
+            "type": "packages",
+            "format": "{} (packages)",
+            "key": "PACKAGES",
+            "keyColor": "red"  
+        },
+        {
+            "type": "terminal",
+            "key": "TERMINAL",
+            "keyColor": "red"
+        },
+        {
+            "type": "cpu",
+            "format": "{1}",
+            "key": "CPU",
+            "keyColor": "red"
+        },
+        {
+            "type": "gpu",
+            "format": "{2}",
+            "key": "GPU",
+            "keyColor": "red"
+        },
+        {
+            "type": "memory",
+            "key": "RAM",
+            "keyColor": "red"
+        },
+        {
+            "type": "swap",
+            "key": "SWAP",
+            "keyColor": "red"
+        },
+        {
+            "type": "disk",
+            "key": "DSK",
+            "keyColor": "red"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m°  \u001b[31m°  \u001b[32m°  \u001b[33m°  \u001b[34m°  \u001b[35m°  \u001b[36m°  \u001b[37m°"
+        },
+        "break"
+    ]
+}
